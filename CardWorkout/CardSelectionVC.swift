@@ -7,6 +7,19 @@
 
 import UIKit
 
+let systemGreen = CGColor(
+    red: 98/255,
+    green: 199/255,
+    blue: 98/255,
+    alpha: 1)
+
+let systemRed = CGColor(
+    red: 235/255,
+    green: 78/255,
+    blue: 61/255,
+    alpha: 1)
+
+
 class CardSelectionVC: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
@@ -20,10 +33,14 @@ class CardSelectionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startTimer()
+//        startTimer()
         
+//        uniButton.titleLabel?.font = UIFont(name: "System Regular", size: 19)
         uniButton.setTitle("Start", for: .normal)
-        uniButton.layer.backgroundColor = CGColor.init(red: 0, green: 1, blue: 0, alpha: 1)
+        uniButton.layer.backgroundColor = systemGreen
+        
+        //UIColor.systemGreen.cgColor
+        uniButton.layer.cornerRadius = 10
         
         
         for button in buttons {
@@ -49,10 +66,10 @@ class CardSelectionVC: UIViewController {
     
     
     
-    @IBAction func stopButtonTapped(_ sender: UIButton) {
-        timer!.invalidate()
-        
-    }
+//    @IBAction func stopButtonTapped(_ sender: UIButton) {
+//        timer!.invalidate()
+//
+//    }
     
     @IBAction func restartButtonTapped(_ sender: UIButton) {
         timer!.invalidate()
@@ -63,21 +80,14 @@ class CardSelectionVC: UIViewController {
     @IBAction func uniButtonTapped(_ sender: UIButton) {
         if (uniButton.currentTitle == "Start") {
             uniButton.setTitle("Stop", for: .normal)
-            uniButton.layer.backgroundColor = CGColor.init(red: 1, green: 0, blue: 0, alpha: 1)
+            uniButton.layer.backgroundColor = systemRed
+            startTimer()
         } else {
             uniButton.setTitle("Start", for: .normal)
-            uniButton.layer.backgroundColor = CGColor.init(red: 0, green: 1, blue: 0, alpha: 1)
+            uniButton.layer.backgroundColor = systemGreen
+            timer!.invalidate()
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

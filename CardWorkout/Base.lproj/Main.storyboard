@@ -23,44 +23,11 @@
                                     <constraint firstAttribute="height" constant="350" id="aTi-on-KIw"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU3-pz-Fyd">
-                                <rect key="frame" x="66.666666666666686" y="576" width="260" height="50"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7XJ-or-1kh"/>
-                                    <constraint firstAttribute="width" constant="260" id="V5P-kt-KKY"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Stop!">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMS-Bz-4Fg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-jH-FJ1">
-                                <rect key="frame" x="66.666666666666671" y="646" width="115.00000000000001" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="115" id="5Wg-CS-DyY"/>
-                                    <constraint firstAttribute="height" constant="50" id="h2h-HX-V7w"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Restart">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yf0-pl-T4k"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqg-4L-Dx9">
-                                <rect key="frame" x="211.66666666666663" y="646" width="115" height="50"/>
+                                <rect key="frame" x="66.666666666666686" y="646" width="260" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="115" id="VsP-jz-7KD"/>
+                                    <constraint firstAttribute="width" constant="260" id="VsP-jz-7KD"/>
                                     <constraint firstAttribute="height" constant="50" id="WVx-E3-aUy"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -73,18 +40,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2U-sW-lYd">
-                                <rect key="frame" x="66.666666666666686" y="716" width="260" height="50"/>
+                                <rect key="frame" x="66.666666666666686" y="576" width="260" height="50"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="PWf-LT-eRa"/>
                                     <constraint firstAttribute="height" constant="50" id="u23-gJ-0nQ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Stop!">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <state key="normal" title="Stop!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="uniButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rda-Me-h3C"/>
                                 </connections>
@@ -93,23 +60,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Tqg-4L-Dx9" firstAttribute="trailing" secondItem="N2U-sW-lYd" secondAttribute="trailing" id="0OJ-g7-321"/>
                             <constraint firstItem="N2U-sW-lYd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DdG-sX-OxG"/>
-                            <constraint firstItem="UU3-pz-Fyd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWD-KC-PCf"/>
                             <constraint firstItem="TMl-HE-SIv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="Fdw-Ur-VxW"/>
-                            <constraint firstItem="Tqg-4L-Dx9" firstAttribute="trailing" secondItem="UU3-pz-Fyd" secondAttribute="trailing" id="I2q-dE-i56"/>
-                            <constraint firstItem="UU3-pz-Fyd" firstAttribute="top" secondItem="TMl-HE-SIv" secondAttribute="bottom" constant="50" id="QI0-Bo-6Tb"/>
+                            <constraint firstItem="N2U-sW-lYd" firstAttribute="top" secondItem="TMl-HE-SIv" secondAttribute="bottom" constant="50" id="RB2-WT-xZ3"/>
                             <constraint firstItem="TMl-HE-SIv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RaL-uQ-dfI"/>
-                            <constraint firstItem="Ebw-jH-FJ1" firstAttribute="leading" secondItem="UU3-pz-Fyd" secondAttribute="leading" id="U12-lf-OGf"/>
-                            <constraint firstItem="N2U-sW-lYd" firstAttribute="top" secondItem="Ebw-jH-FJ1" secondAttribute="bottom" constant="20" id="cnH-wA-FJb"/>
-                            <constraint firstItem="Tqg-4L-Dx9" firstAttribute="top" secondItem="UU3-pz-Fyd" secondAttribute="bottom" constant="20" id="pyi-FV-3Lu"/>
-                            <constraint firstItem="Ebw-jH-FJ1" firstAttribute="top" secondItem="UU3-pz-Fyd" secondAttribute="bottom" constant="20" id="tbB-XO-drB"/>
+                            <constraint firstItem="Tqg-4L-Dx9" firstAttribute="top" secondItem="N2U-sW-lYd" secondAttribute="bottom" constant="20" id="yNC-uC-a2U"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardImageView" destination="TMl-HE-SIv" id="Axz-YJ-Big"/>
                         <outlet property="uniButton" destination="N2U-sW-lYd" id="p1I-gb-D9U"/>
-                        <outletCollection property="buttons" destination="UU3-pz-Fyd" collectionClass="NSMutableArray" id="nug-hi-8RR"/>
-                        <outletCollection property="buttons" destination="Ebw-jH-FJ1" collectionClass="NSMutableArray" id="6ji-qS-ads"/>
                         <outletCollection property="buttons" destination="Tqg-4L-Dx9" collectionClass="NSMutableArray" id="Dkc-Td-24F"/>
                     </connections>
                 </viewController>
@@ -173,9 +134,6 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
