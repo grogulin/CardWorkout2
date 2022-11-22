@@ -72,22 +72,42 @@
                                     <segue destination="3YC-pS-M0T" kind="presentation" id="gnR-dx-nX3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2U-sW-lYd">
+                                <rect key="frame" x="66.666666666666686" y="716" width="260" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="PWf-LT-eRa"/>
+                                    <constraint firstAttribute="height" constant="50" id="u23-gJ-0nQ"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="3" height="3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stop!">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="uniButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rda-Me-h3C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="N2U-sW-lYd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DdG-sX-OxG"/>
                             <constraint firstItem="UU3-pz-Fyd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWD-KC-PCf"/>
                             <constraint firstItem="TMl-HE-SIv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="Fdw-Ur-VxW"/>
                             <constraint firstItem="Tqg-4L-Dx9" firstAttribute="trailing" secondItem="UU3-pz-Fyd" secondAttribute="trailing" id="I2q-dE-i56"/>
                             <constraint firstItem="UU3-pz-Fyd" firstAttribute="top" secondItem="TMl-HE-SIv" secondAttribute="bottom" constant="50" id="QI0-Bo-6Tb"/>
                             <constraint firstItem="TMl-HE-SIv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RaL-uQ-dfI"/>
                             <constraint firstItem="Ebw-jH-FJ1" firstAttribute="leading" secondItem="UU3-pz-Fyd" secondAttribute="leading" id="U12-lf-OGf"/>
+                            <constraint firstItem="N2U-sW-lYd" firstAttribute="top" secondItem="Ebw-jH-FJ1" secondAttribute="bottom" constant="20" id="cnH-wA-FJb"/>
                             <constraint firstItem="Tqg-4L-Dx9" firstAttribute="top" secondItem="UU3-pz-Fyd" secondAttribute="bottom" constant="20" id="pyi-FV-3Lu"/>
                             <constraint firstItem="Ebw-jH-FJ1" firstAttribute="top" secondItem="UU3-pz-Fyd" secondAttribute="bottom" constant="20" id="tbB-XO-drB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardImageView" destination="TMl-HE-SIv" id="Axz-YJ-Big"/>
+                        <outlet property="uniButton" destination="N2U-sW-lYd" id="p1I-gb-D9U"/>
                         <outletCollection property="buttons" destination="UU3-pz-Fyd" collectionClass="NSMutableArray" id="nug-hi-8RR"/>
                         <outletCollection property="buttons" destination="Ebw-jH-FJ1" collectionClass="NSMutableArray" id="6ji-qS-ads"/>
                         <outletCollection property="buttons" destination="Tqg-4L-Dx9" collectionClass="NSMutableArray" id="Dkc-Td-24F"/>

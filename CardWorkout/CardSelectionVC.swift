@@ -10,6 +10,9 @@ import UIKit
 class CardSelectionVC: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
+    
+    @IBOutlet var uniButton: UIButton!
+    
     var cards: [UIImage] = Card.allValues
     
     var timer: Timer?
@@ -18,6 +21,9 @@ class CardSelectionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startTimer()
+        
+        uniButton.setTitle("Start", for: .normal)
+        uniButton.layer.backgroundColor = CGColor.init(red: 0, green: 1, blue: 0, alpha: 1)
         
         
         for button in buttons {
@@ -41,6 +47,8 @@ class CardSelectionVC: UIViewController {
         cardImageView.image = cards.randomElement() ?? UIImage(named: "AS")
     }
     
+    
+    
     @IBAction func stopButtonTapped(_ sender: UIButton) {
         timer!.invalidate()
         
@@ -52,7 +60,16 @@ class CardSelectionVC: UIViewController {
         
     }
     
-
+    @IBAction func uniButtonTapped(_ sender: UIButton) {
+        if (uniButton.currentTitle == "Start") {
+            uniButton.setTitle("Stop", for: .normal)
+            uniButton.layer.backgroundColor = CGColor.init(red: 1, green: 0, blue: 0, alpha: 1)
+        } else {
+            uniButton.setTitle("Start", for: .normal)
+            uniButton.layer.backgroundColor = CGColor.init(red: 0, green: 1, blue: 0, alpha: 1)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
